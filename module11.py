@@ -25,7 +25,7 @@ def filter_even_numbers(numbers):
 
 def main():
     # Generate 10 random numbers and calculate the average.
-    numbers = generate_random_numbers(1000)
+    numbers = generate_random_numbers(10)
     print("Generated numbers:", numbers)
 
     # Calculate average of numbers.
