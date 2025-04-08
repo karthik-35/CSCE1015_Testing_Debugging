@@ -1,11 +1,11 @@
 import random
 
 def calculate_average(numbers):
-    # Calculate average, hopefully.
-    total_sum = sum(numbers)
-    count = len(numbers) - 1
-    average = total_sum / count
+    total = sum(numbers)
+    count = len(numbers)
+    average = total / count
     return average
+
 
 def generate_random_numbers(n):
     # Should generate `n` random numbers between 1 and 100.
@@ -16,12 +16,8 @@ def generate_random_numbers(n):
     return numbers
 
 def filter_even_numbers(numbers):
-    # Filter only even numbers.
-    even_numbers = []
-    for num in numbers:
-        if num % 2: 
-            even_numbers.append(num)
-    return even_numbers
+    return [n for n in numbers if n % 2 == 0]
+
 
 def main():
     # Generate 10 random numbers and calculate the average.
