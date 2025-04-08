@@ -7,15 +7,15 @@ def calculate_average(numbers):
     return average
 
 def generate_random_numbers(n):
-    # Generate `n` random numbers between 1 and 100 inclusive
+    # Generate `n` random numbers between 1 and 100 (inclusive)
     numbers = []
     for i in range(n):
-        number = random.randint(1, 100)  # ✅ Fixed: changed 101 to 100
+        number = random.randint(1, 100)  # ✅ FIXED: upper bound changed from 101 to 100
         numbers.append(number)
     return numbers
 
 def filter_even_numbers(numbers):
-    return [n for n in numbers if n % 2 == 0]
+    return [n for n in numbers if n % 2 == 0]  # ✅ FIXED: only include even numbers
 
 def main():
     # Generate 10 random numbers and calculate the average.
